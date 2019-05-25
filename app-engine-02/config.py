@@ -11,7 +11,6 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-
 """
 This file contains all of the configuration values for the application.
 Update this file with the values for your specific Google Cloud project.
@@ -40,10 +39,9 @@ SQLALCHEMY_DATABASE_URI = \
 # You also need to make sure that the default ACL is set to public-read,
 # otherwise users will not be able to see their upload images:
 #
-#   $ gsutil defacl set public-read gs://<your-bucket-name>
-#
+#   $ gsutil defacl set public-read gs://mytestnewuscentralbucket#
 # You can adjust the max content length and allow extensions settings to allow
 # larger or more varied file types if desired.
-CLOUD_STORAGE_BUCKET = 'la-musicgallery-001'
+CLOUD_STORAGE_BUCKET = 'mytestnewuscentralbucket'
 MAX_CONTENT_LENGTH = 8 * 1024 * 1024
 ALLOWED_EXTENSIONS = set(['png', 'jpg', 'jpeg', 'gif'])
